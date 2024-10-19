@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Focus on Today</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="responsive.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 class="heading">Focus on <span id="today">Today</span></h1>
+        <div class="container">
+            <div class="sub-head">
+                <h2>Today</h2>
+                <img id="sun" src="images/Sun.svg" alt="sun" />
+            </div>
+            <p id="progress-label">Raise the bar by completing your goals!</p>
+            <div class="bar">
+                <div class="complete-bar">
+                    <span id="completed-text"></span>
+                </div>
+            </div>
+            <p class="error-label">Please set all the 3 goals!</p>
+            <div class="all-inputs">
+                <div class="input">
+                    <div class="custom-checkbox">
+                        <img src="images/check-icon.svg" alt="checkbox">
+                    </div>
+                    <input placeholder="Add new goal..." type="text" id="task" />
+                </div>
+                <div class="input">
+                    <div class="custom-checkbox">
+                        <img src="images/check-icon.svg" alt="checkbox">
+                    </div>
+                    <input placeholder="Add new goal..." type="text" id="task" />
+                </div>
+                <div class="input">
+                    <div class="custom-checkbox">
+                        <img src="images/check-icon.svg" alt="checkbox">
+                    </div>
+                    <input placeholder="Add new goal..." type="text" id="task" />
+                </div>
+            </div>
+            <p id="quote">"Move one step ahead, today!"</p>
+            <p class="footer">Made with ❤️ by Imran Khan</p>
+        </div>
+    </body>
+</html>
