@@ -17,6 +17,15 @@ checkboxAll.forEach((checkbox) => {
             const completedTasks = document.querySelectorAll('.completed').length;
 
             progressBar.classList.add('complete-progress')
+            
+            input.forEach((el)=>{
+                if (el.parentElement.classList.contains('completed')) {
+                    el.setAttribute('readonly', true)
+                }else{
+                    el.removeAttribute('readonly')
+                }
+                
+            })
 
             if (completedTasks === 0) {
                 progressBar.style.width = '0%';
@@ -27,6 +36,7 @@ checkboxAll.forEach((checkbox) => {
                 progressBar.style.width = '33.33%';
                 completedText.innerText = '1/3 Completed' 
                 quote.innerText = '"Great start! One step closer to your goal."';
+
             }
             else if (completedTasks === 2) {
                 progressBar.style.width = '66.66%';

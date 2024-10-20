@@ -63,11 +63,16 @@ body {
     height: 30px;
     border-radius: 15px;
     background-color: #48A300;
+    transition: all ease 0.8s;
 }
 
 #completed-text{
+    display: block;
     color: white;
     padding-left: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 3px;
 }
 
 .input{
